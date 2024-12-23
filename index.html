@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(min-width:1000px){
+        .widgetcontainer{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 500px 30px 200px  450px 200px 200px;
+            column-gap: 30px;
+            
+            
+
+        }
+
+        .widget1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end:2 ;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .widget2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end:4 ;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .widget3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end:3 ;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .widget4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 7;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .widget5{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-color: pink;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .widget6{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end:6 ;background-color: blueviolet;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+
+    @media(max-width:1000px){
+        .widgetcontainer{
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 200px 150px 100px  30px 100px 100px 100px;
+            column-gap: 30px;
+            
+            
+            
+
+        }
+
+        .widget1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end:2 ;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .widget2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3 ;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .widget3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end:8 ;
+            background-color: blue;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .widget4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            background-color: green;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .widget5{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: pink;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .widget6{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: 7;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="widgetcontainer">
+        <div class="widget1"><h1>Widget 1</h1></div>
+        <div class="widget2"><h1>Widget 2</h1></div>
+        <div class="widget3"><h1>Widget 3</h1></div>
+        <div class="widget4"><h1>Widget 4</h1></div>
+        <div class="widget5"><h1>Widget 5</h1></div>
+        <div class="widget6"><h1>Widget 6</h1></div>
+
+    </div>
+    
+    
+</body>
+</html>
